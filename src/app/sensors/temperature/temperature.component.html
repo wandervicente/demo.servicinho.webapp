@@ -1,0 +1,19 @@
+<div class="d-flex align-items-center">
+    <h2>Sensor0: Temperatura</h2>
+</div>
+<div class="table-responsive">
+    <table class="table table-striped table-sm">
+        <thead>
+            <tr>
+                <th>Timestamp</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let temperature of temperatures">
+            <tr>
+                <td>{{ temperature.timestamp }}</td>
+                <td>{{ temperature.readingValue }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
